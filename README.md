@@ -50,7 +50,17 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 when you choose mode in ['snapkv','headkv','cokv'], the parameter model.model.config.given_adaptive_size will be set.
-
 when you choose mode='ada', model.model.config.given_adaptive_size will be none.
+### Acknowledgments​
+We gratefully acknowledge the following open-source projects that contributed to our implementation:
+
+- [​SnapKV](https://github.com/FasterDecoding/SnapKV)​
+- [AdaKV](https://github.com/FFY0/AdaKV)
+- [HeadKV](https://github.com/FYYFU/HeadKV)​
+- [LLMTest_NeedleInAHaystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack?tab=readme-ov-file)
+  
+We appreciate the researchers and developers for making their code publicly available, which significantly advanced our work.
+
+
 
 
