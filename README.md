@@ -3,18 +3,18 @@
 ## Usage
 
 ### Requirements
-please see the environment.yml
+please see the **environment.yml**
 (replace transformers==4.40.0 when you use mistral-7b-v0.2 model), see /CoKV/csrc/makefile to install tiny-pkg
 
-please set project_path='Path_To_Your_Project/CoKV'
+please set **project_path='Path_To_Your_Project/CoKV'**
 
 please use /CoKV/assets/datasets/process_longbench_split.py to split valid and test dataset
 
 ## Evaluations
 ### importance score computation
-For LongBench, please cd /CokV/experiments/LongBench/importance_evaluation and run ./cal_global_sv.sh.
+For LongBench, please cd **/CokV/experiments/LongBench/importance_evaluation** and run **./cal_global_sv.sh**.
 
-For NIAH, please cd /CokV/experiments/Needle/importance_evaluation and run ./needle_in_haystack.sh.
+For NIAH, please cd **/CokV/experiments/Needle/importance_evaluation** and run **./needle_in_haystack.sh**.
 
 We recommend performing two independent sampling runs to get stable Sliced Shapley value. The results are considered stable when the mean absolute error between the Sliced Shapley values from the two runs is less than  1/n where n is your player. The --sampling_number 10000 parameter is intended to keep the script running indefinitely, not to enforce exactly 10,000 samplings. You can adjust the script to terminate once the error falls below your specified threshold.
 
