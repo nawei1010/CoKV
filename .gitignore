@@ -1,0 +1,20 @@
+# Logs and outputs
+*.log
+nohup.out
+**/nohup.out
+**/*.log
+pred/
+pred_e/
+
+# Datasets and models (paths resolved via env vars)
+datasets/
+models/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files local paths
+.env
+
+
