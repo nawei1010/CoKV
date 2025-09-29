@@ -44,23 +44,6 @@ Update model paths in the configuration files and scripts:
 
 ## Usage
 
-### Basic Usage
-
-1. **Import and apply CoKV:**
-```python
-from adaptive_kv.monkeypatch import monkeypatch
-import transformers
-
-# Apply CoKV patches to the model
-model = transformers.AutoModelForCausalLM.from_pretrained("your-model-path")
-monkeypatch(model)
-```
-
-2. **Configure cache parameters:**
-```python
-# Set adaptive cache size
-model.config.given_adaptive_size = cache_configuration
-```
 
 ### Running Experiments
 #### LongBench Evaluation
